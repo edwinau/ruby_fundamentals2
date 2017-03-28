@@ -1,5 +1,5 @@
 def greet_backwards(name)
-  puts "Your future name is " + name.reverse
+  puts "Your future name is " + name.reverse+ name.reverse
 end
 
 greet_backwards("James")
