@@ -13,9 +13,19 @@ end
 
 
 additem(grocery_list,"juice")
-additem(grocery_list,"banana")
+additem(grocery_list,"cranberry")
 
 puts "------"
 
 
 puts grocery_list.length
+puts "------"
+
+case grocery_list.include?("banana")
+  when false
+   puts "No bananas this week."
+  when true
+   puts "Pick up bananas!"
+ else
+end
+puts "------"
