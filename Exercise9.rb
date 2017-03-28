@@ -1,22 +1,21 @@
-grocery_list = ["carrots", "detergent", "meat", "fruits", "apple"]
+grocery_list = ["carrots", "juice", "apple", "celery"]
 
-# puts grocery_list.length
-
-#1
-# def print_list(list)
-  list.each do |x|
-    puts "*" + x.to_s
-  end
-  puts "-------------"
-#end
-
-def additem(list, item)
-  list << "*#{item}"
-  # print_list(list)
+grocery_list.map do |list|
+    puts "* #{list}"
 end
 
-additem(grocery_list, "juice")
-additem(grocery_list, "bananas")
-#2 lost count out put totale
+puts "------"
 
- #puts grocery_list.length
+def additem(grocery_list, object)
+  grocery_list << "*"+object
+  puts "* #{object}"
+end
+
+
+additem(grocery_list,"juice")
+additem(grocery_list,"banana")
+
+puts "------"
+
+
+puts grocery_list.length
