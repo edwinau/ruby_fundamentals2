@@ -29,3 +29,5 @@ case grocery_list.include?("banana")
  else
 end
 puts "------"
+
+puts grocery_list[1]
