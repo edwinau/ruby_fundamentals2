@@ -1,21 +1,15 @@
-def expensesum(exp_array)
+
+expense1 = [4,6,7,9,10,11,3]
+expense2 = [3,6,7]
+
+
+def exp_method(expense_array)
   sum = 0
-  exp_array.each do |x|
-    puts sum += x
+  expense_array.each do |x|
+   sum += x
   end
   return sum
 end
 
-expense1 = [1,2,3,4]
-
-total1 = expensesum(expense1)
-
-puts "----"
-puts "Your expense total is $#{total1}."
-
-expense2 = [5,6,7,8]
-
-total2 = expensesum(expense2)
-
-puts "----"
-puts "Your expense total is $#{total2}."
+puts exp_method(expense1)
+puts exp_method(expense2)
