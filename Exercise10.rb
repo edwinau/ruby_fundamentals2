@@ -29,8 +29,14 @@ end
 puts "----"
 
 #5
-students.each.map do |x,y|
-  newnumber = "#{x}: #{y*1.05} students"
+newnumber = students.each.map do |x,y|
+  "#{x}: #{y*1.05} students"
 end
+puts newnumber
 
-puts "----"
+puts "xxxx"
+#6
+students.delete(:cohort2)
+puts students
+
+puts "xxxx"
