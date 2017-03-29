@@ -1,0 +1,4 @@
+students.each do |key, value|
+new_value = value +10
+students[key] = new_value
+end
