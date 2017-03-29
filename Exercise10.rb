@@ -40,3 +40,10 @@ students.delete(:cohort2)
 puts students
 
 puts "xxxx"
+
+#7
+sum = 0
+students.each do |k,v|
+  sum += v
+   puts sum
+end
