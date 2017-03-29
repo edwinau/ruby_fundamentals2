@@ -19,3 +19,9 @@ puts "----"
 #3
 students["cohort4"] = "43"
 puts students
+
+#4
+students.each.map do |x,y=0|
+  list = "#{x}"
+  puts list
+end
