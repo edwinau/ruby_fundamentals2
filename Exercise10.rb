@@ -47,3 +47,16 @@ students.each do |k,v|
   sum += v
    puts sum
 end
+
+#8
+staff = {
+  :cohortA => 3,
+  :cohortB => 4,
+  :cohortC => 5
+}
+
+#2
+staff.each.map do |x,y|
+  list = "#{x}: #{y} staff"
+  puts list
+end
