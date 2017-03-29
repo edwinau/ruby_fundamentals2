@@ -55,7 +55,7 @@ staff = {
   :cohortC => 5
 }
 
-#2
+#9
 staff.each.map do |x,y|
   list = "#{x}: #{y} staff"
   puts list
