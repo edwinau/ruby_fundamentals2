@@ -61,3 +61,58 @@ puts asterisk(y)
 
 y.delete("salmon")
 puts asterisk(y)
+puts "----Excercise 10---"
+
+students = {
+  :cohort1 => 34,
+  :cohort2 => 42,
+  :cohort3 => 22
+}
+
+def display(y)
+  y.each do |k,v|
+    if v < 10
+    puts "#{k}: #{v} staff."
+  elsif v > 10
+      puts "#{k}: #{v} students."
+    end
+  end
+  return y
+end
+
+display(students)
+
+def key(x)
+  x.each do |k,y|
+    puts "#{k}"
+end
+end
+key(students)
+
+def expand(x)
+  x.each do |k,v|
+    puts "#{k} now has #{(v*1.05).round}students"
+end
+end
+expand(students)
+
+# students[:cohort2] = "nil"
+# puts students
+
+def total_students(num)
+  sum = 0
+  num.each do |k,v|
+  sum += v.to_i
+  end
+  return puts "total students #{sum}."
+
+end
+total_students(students)
+
+staff = {
+  :cohort1 => 2,
+  :cohort2 => 1,
+  :cohort3 => 3
+}
+display(students)
+display(staff)
