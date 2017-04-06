@@ -17,3 +17,16 @@ def wrap_text(word)
   return "<---===\#\#\##{word}\#\#\#===--->"
 end
 puts wrap_text("hello")
+
+
+
+def total_expense(array_num)
+    sum = 0
+    array_num.each do |x|
+    sum += x
+  end
+  puts  sum
+end
+
+array_num = [250, 7.95, 30.95, 16.50]
+total_expense(array_num)
