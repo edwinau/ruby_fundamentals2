@@ -131,35 +131,18 @@ puts my_dogs[0][:position]
 puts my_dogs[1][:position]
 puts my_dogs[2][:position]
 
-def get_absent_dogs(y)
-y.each do |x|
-  if x[:position]>10
-    puts "#{x[:name]} is out"
-  else
-    puts "#{x[:name]} is in"
-  end
-end
-end
-get_absent_dogs(my_dogs)
-
-def call_absent_dogs(y)
-  y.each do |x|
-
-  if x[:position]>10
-    puts "Come Back, #{x[:name]}!"
-  else
-    nil
-  end
-end
-end
-
-call_absent_dogs(my_dogs)
-
-
-# def get_absent_dogs(y)
-#   y.each do |k,v|
-#     puts v
-#   end
-#   return v
-# end
+my_dogs.select! {|x| x[:position]>10}
+#
 # get_absent_dogs(my_dogs)
+#
+# def call_absent_dogs(y)
+#   y.each do |x|
+#     if x[:position]>10
+#       puts "Come Back, #{x[:name]}!"
+#     else
+#       nil
+#     end
+#   end
+# end
+
+# call_absent_dogs(my_dogs)
