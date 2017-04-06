@@ -12,3 +12,8 @@ def f_to_c(fah)
   return puts "convert temp is #{cel}C."
 end
 puts f_to_c(15)
+
+def wrap_text(word)
+  return "<---===\#\#\##{word}\#\#\#===--->"
+end
+puts wrap_text("hello")
